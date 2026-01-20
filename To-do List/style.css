@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f5f9fa;
+  border-radius: 28px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.name h3 {
+  margin: 10px 0px 20px 0px;
+  text-align: center;
+}
+
+.bar {
+  margin: 22.5px 0px 15px 0px;
+  background-color: #ebebef;
+  border-radius: 30px;
+}
+
+input {
+  padding: 12.5px;
+  padding-left: 20px;
+  background: transparent;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 12.5px 30px;
+  background-color: #0049ff;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.list {
+  padding: 0px 5px;
+}
+
+ul li {
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 14px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 0;
+  background-image: url("assets/circle.png");
+  background-size: cover;
+  background-position: center;
+}
+
+ul li.checked {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 0;
+  background-image: url("assets/circle-check.png");
+  background-size: cover;
+  background-position: center;
+}
+
+ul li span {
+  padding: 0px 10px;
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+ul li span:hover {
+  background-color: #ebebef;
+}
