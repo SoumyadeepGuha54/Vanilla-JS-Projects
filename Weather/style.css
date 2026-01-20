@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 90%;
+  max-width: 540px;
+  background: linear-gradient(45deg, #8ec5fc, #e0c3ff);
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
