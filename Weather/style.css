@@ -5,10 +5,43 @@
 
 .card {
   width: 90%;
-  max-width: 540px;
+  max-width: 450px;
   background: linear-gradient(45deg, #8ec5fc, #e0c3ff);
   margin: auto;
   border-radius: 20px;
   padding: 40px;
   text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  padding: 0px 25px;
+  height: 50px;
+  border-radius: 25px;
+  flex: 1;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 20px;
+  margin-top: 5px;
 }
