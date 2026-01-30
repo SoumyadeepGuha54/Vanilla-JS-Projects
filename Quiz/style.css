@@ -15,7 +15,56 @@ body {
 
 .app {
   background-color: white;
+  width: 90%;
   max-width: 600px;
-  padding: 50px;
+  padding: 40px;
   border-radius: 10px;
+}
+
+.app h1 {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.quiz {
+  padding-top: 20px;
+}
+
+.quiz h2 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: white;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 12.5px 20px;
+  border-radius: 7.5px;
+  border: 1px solid grey;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.next-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.next {
+  background-color: black;
+  width: 40%;
+  padding: 12.5px;
+  border-radius: 7.5px;
+  border: 1px solid black;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
 }
