@@ -86,6 +86,53 @@ function resetState() {
   }
 }
 
-function selectAnswer() {}
+function selectAnswer(e) {
+  const selectedBtn = e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
+  if (isCorrect) {
+    selectedBtn.classList.add("correct");
+    score++;
+  } else {
+    selectedBtn.classList.add("incorrect");
+  }
+  Array.from(answerElements.children).forEach((button) => {
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
+    }
+    button.disabled = true;
+  });
+  nextButton.style.display = "block";
+}
+
+function handleNextButton() {
+  currentIndex++;
+  if (currentIndex < qna.length) {
+    showQuestion();
+  } else {
+    showScore();
+  }
+}
+
+function showScore() {
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${qna.length} questions.`;
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+}
+
+function showScore() {
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${qna.length} questions.`;
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+}
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < qna.length) {
+    handleNextButton();
+  } else {
+    startQuiz();
+  }
+});
 
 startQuiz();

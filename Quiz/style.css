@@ -47,9 +47,13 @@ body {
   font-size: 14px;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
   background-color: black;
   color: white;
+}
+
+.btn:disabled {
+  cursor: no-drop;
 }
 
 .next-section {
@@ -67,4 +71,16 @@ body {
   color: white;
   font-size: 14px;
   cursor: pointer;
+}
+
+.correct {
+  background-color: #9aeabc;
+  color: green;
+  border: green;
+}
+
+.incorrect {
+  background-color: #ff9393;
+  color: darkred;
+  border: darkred;
 }
