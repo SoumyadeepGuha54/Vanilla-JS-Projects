@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Syne:wght@400..800&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>QR Code Generator</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <p>Enter your text or URL</p>
+        <div class="input-section"><input type="text" placeholder="Text or URL" id="qr-text"></div>
+        <div id="image-section">
+            <img src="" alt="" id="qr-code">
+        </div>
+        <div class="button-section"><button onclick="generateQR()">Generate QR Code</button></div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
